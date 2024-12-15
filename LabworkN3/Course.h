@@ -1,4 +1,4 @@
-#ifndef CourseInHEAD
+#ifndef CourseHead
 #define CourseHead
 #include "Students.h"
 // структура для курса массив заголовочный
