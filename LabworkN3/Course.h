@@ -1,5 +1,7 @@
 #ifndef CourseHead
 #define CourseHead
+// добовляем дериктиву которая связывает структуры 
+// в данном случае структура Student и Course
 #include "Students.h"
 // структура для курса массив заголовочный
 typedef struct 
