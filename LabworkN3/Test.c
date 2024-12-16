@@ -2,6 +2,36 @@
 #include "Students.h"
 #include "Course.h"
 
+// to do all test of main.c need compilation executable file with Main.c and all struct code 
+void TestIsValidName() 
+{
+    // позитивный тест для функции проверки имени
+    if (IsValidName("Иван") == 1) 
+    {
+        printf("Тест IsValidName (valid): УСПЕХ\n");
+    } 
+    else 
+    {
+        printf("Тест IsValidName (valid): ПРОВАЛ\n");
+    }
+    // Тест без имени
+    if (IsValidName("") == 0) {
+        printf("Тест IsValidName (empty): УСПЕХ\n");
+    } 
+    else 
+    {
+        printf("Тест IsValidName (empty): ПРОВАЛ\n");
+    }
+    // тест с именем равное Null
+    if (IsValidName(NULL) == 0) 
+    {
+        printf("Тест IsValidName (NULL): УСПЕХ\n");
+    }
+    else
+    {
+        printf("Тест IsValidName (NULL): ПРОВАЛ\n");
+    }
+}
 // Позитивный тест для функции изменения средней оценки студента
 void TestChangeAverage() {
     Student CurrentStudent = {"Иван", 21, 3.0}; // Создаем студента с именем Иван и средней оценкой 3.0
