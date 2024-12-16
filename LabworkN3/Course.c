@@ -20,8 +20,8 @@ int CourseCheckData(Course* CurrentCourse)
     {
         // if curse is not null  
         printf("Загрузка данных...");
-        printf("Data load...");
     }
+    printf("Data load...");
 }
 int AddStudentToCourse(Course* CurrentCourse, Student CurrentStudent)
 {
