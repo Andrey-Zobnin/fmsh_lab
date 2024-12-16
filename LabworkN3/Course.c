@@ -7,22 +7,24 @@ int CourseCheckData(Course* CurrentCourse)
     if (CurrentCourse == NULL) 
     {
         printf("Error: course is NULL\n");
+        prinrf("Ошибка: курса нет");
         return 0;
     }
     else if(CurrentCourse == NULL || CurrentCourse -> StudentCount == 0) 
     {
         printf("Error: course || current  is NULL\n");
+        printf("Ошибка: студентов нет\n");
         return 0;
     }
     else 
     {
         // if curse is not null  
+        printf("Загрузка данных...");
         printf("Data load...");
     }
 }
 int AddStudentToCourse(Course* CurrentCourse, Student CurrentStudent)
 {
-    // if (CurrentCourse == NULL) return 0; // Проверка на дурака
     if (CourseCheckData(CurrentCourse))
     {
         if (CurrentCourse -> StudentCount < CurrentCourse -> MaxStudents)
@@ -33,6 +35,7 @@ int AddStudentToCourse(Course* CurrentCourse, Student CurrentStudent)
         {
             // return 0; // Ошибка: превышено максимальное количество студентов
             printf("Error Max count of students");
+            printf("Ошибка превышено максимальное кол-во студентов.");
             return 0;
         }
     }
@@ -42,7 +45,6 @@ int AddStudentToCourse(Course* CurrentCourse, Student CurrentStudent)
 
 Student* FindTopStudent(Course* CurrentCourse) 
 {
-    // if (CurrentCourse == NULL || CurrentCourse->StudentCount == 0) return NULL; // Проверка на дурака
     if (CourseCheckData(CurrentCourse))
     {
             Student* topStudent = &CurrentCourse -> Students[0];
