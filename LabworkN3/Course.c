@@ -7,7 +7,7 @@ int CourseCheckData(Course* CurrentCourse)
     if (CurrentCourse == NULL) 
     {
         printf("Error: course is NULL\n");
-        prinrf("Ошибка: курса нет");
+        printf("Ошибка: курса нет");
         return 0;
     }
     else if(CurrentCourse == NULL || CurrentCourse -> StudentCount == 0) 
