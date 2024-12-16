@@ -48,9 +48,10 @@ void TestChangeAverage() {
 // Позитивный тест для функции проверки, является ли студент отличником
 void TestIsHonorsStudent() {
     Student CurrentStudent = {"Анна", 22, 4.6}; // Создаем студентку с именем Анна и средней оценкой 4.6
-    
+    // Student CurrentStudent = {"Иван", 21, 4.6}; // Создаем студента
     // Проверяем, что студентка является отличником
-    if (IsExcellentStudent(&CurrentStudent) == 1) {
+    if (IsExcellentStudent(&CurrentStudent) == 1) 
+    {
         printf("Тест IsHonorsStudent: УСПЕХ\n");
     } else {
         printf("Тест IsHonorsStudent: ПРОВАЛ\n");
