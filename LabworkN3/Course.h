@@ -8,6 +8,7 @@ typedef struct
     int StudentCount;
     int MaxStudents;
     Student Students[100]; // Максимум 100 студентов на курс
+    // to do high level of students in course
 } Course;
 
 // Функции для работы со структурой Course
