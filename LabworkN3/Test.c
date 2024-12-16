@@ -92,7 +92,9 @@ void TestFindTopStudent() {
 }
 
 // Запуск всех тестов
-int main() {
+int main() 
+{
+    TestIsExcellentStudent(); // Запускаем тест для функции проверки, является ли студент отличником
     TestChangeAverage(); // Запускаем тест изменения средней оценки
     TestIsHonorsStudent(); // Запускаем тест проверки отличника
     TestAddStudentToCourse(); // Запускаем тест добавления студента на курс
