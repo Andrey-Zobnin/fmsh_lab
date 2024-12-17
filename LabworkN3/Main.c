@@ -7,6 +7,7 @@
 
 int GetStudentData(Student* CurrentStudent, int id);
 void PrintStudentData(Student* CurrentStudent);
+int IsvalidName(const char* name);
 
 int IsValidName(const char* name) 
 {
