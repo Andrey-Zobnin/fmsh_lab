@@ -1,10 +1,14 @@
 #ifndef STUDENTS_H
 #define STUDENTS_H
 
-typedef struct {
+typedef struct 
+{
     char Name[100];
+    // Name - array of students
     int Age;
+    // Age - возраст студента 
     float AverageScore;
+    // AveregeScore - средний бал студента 
     int id; // id - идентификатор студента
 } Student;
 
