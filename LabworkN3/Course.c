@@ -20,6 +20,15 @@ int CourseCheckData(Course* CurrentCourse)
     {
         // if curse is not null  
         printf("Загрузка данных...");
+        if (CourseCheckData(CurrentCourse))
+        {
+            printf("loading data...");
+        }
+        else
+        {
+            printf("Error of data");
+            
+        }
     }
     printf("Data load...");
 }
