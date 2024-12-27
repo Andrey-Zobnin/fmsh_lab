@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "Students.h"
 
+
+/*
+
+Error Current student is null  1
+
+*/
+
 // функция идентификации студента для сввязи нескольких структур
 int IdentificationInCurrentStudent(Student* CurrentStudent) 
 {
@@ -8,7 +15,7 @@ int IdentificationInCurrentStudent(Student* CurrentStudent)
     {
         printf("Error: CurrentStudent is NULL.\n");
         printf("Ошибка: CurrentStudent равен нулю.\n");
-        return -1; 
+        return 1; 
     }
     else
     {
