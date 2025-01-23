@@ -5,4 +5,5 @@
 int main()
 {
     printf("Helllo, world!");
+    return 0;
 }
